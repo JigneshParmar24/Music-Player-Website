@@ -1,0 +1,95 @@
+.logo img{
+    width: 60px;
+}
+
+.logo{
+    background-color: #fbf9fc;
+}
+.left{
+    width: 25vw;
+}
+
+.right{
+    width: 75vw;
+}
+
+.home ul li{
+    display: flex;
+    gap: 12px;
+    width: 20px;
+    list-style: none;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.headerlib img,
+.headerlib p{
+    display: flex;
+    gap: 12px;
+    width: 24px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+.headerlib{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.songsList{
+    padding: 10px;
+    margin-top: 22px;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+.songsList ul{
+    list-style-type: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.songsList ul li {
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.songsList ul li div{
+    white-space: wrap;
+    width: 200px;
+    font-size: 13px;
+}
+
+.songsList ul li img{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.playsvg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 40px;
+    background-color: black;
+    height: 40px;
+    padding: 10px;
+}
+
+.tracklist:hover{
+    background-color: rgb(32, 31, 31);
+    .playsvg{
+        background-color: rgb(32, 31, 31);
+    }
+}
+
+.tracklist:active{
+    background-attachment: red;
+}

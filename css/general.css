@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Source Code Pro", Roboto;
+}
+
+body {
+  background-color: black;
+}
+
+
+/* Scrollbar styles for dark mode */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+  /* Background of the scrollbar track */
+  border-radius: 10px;
+  /* Rounding edges of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Color of the scrollbar thumb (the draggable part) */
+  border-radius: 10px;
+  /* Rounded corners for the scrollbar thumb */
+  border: 3px solid #2c2c2c;
+  /* Adds space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Darken the thumb on hover */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  /* Makes scrollbar thinner in Firefox */
+  scrollbar-color: #888 #2c2c2c;
+  /* Thumb color and track color */
+}
+
+
+
+.header button img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.header button {
+  border-radius: 4px;
+  border: 2px solid black;
+  margin-left: 9px;
+
+  display: none;
+}
+
+.cross {
+  display: none;
+  position: absolute;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  top: 20px
+}
+
+@media (max-width : 1400px) {
+  .left {
+    position: absolute;
+    left: -110%;
+    transition: all .3s;
+    z-index: 1;
+    width: 360px;
+  }
+
+  .right {
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+  }
+
+
+  .header button {
+    display: block;
+  }
+
+  .cross {
+    display: block;
+  }
+
+  .cardContainer {
+    justify-content: center;
+  }
+
+  .card {
+    width: 55vw;
+  }
+
+  .playbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #a01e1e;
+    border-radius: 10px;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .songsbt {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: static;
+
+  }
+
+  .songtime,
+  .songsinfo {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    position: static;
+    white-space: wrap;
+    width: auto;
+  }
+
+  .songsinfo {
+    width: 250px;
+  }
+
+  .seekbar {
+    height: 4px;
+    border-radius: 10px;
+    width: 80%;
+    left: 6%;
+    top: 200px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: static;
+    right: 15px;
+    top: 15px;
+  }
+
+  .range {
+    width: 80px;
+    color: white;
+  }
+
+  
+}

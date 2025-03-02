@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/left.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/rigth.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="left p-1 bg-black">
+            <div class="logo rounded p-1">
+                <img src="svg/cross.svg" class="cross">
+                <img src="img/YandhiAnimated.gif" alt="logo"></div>
+            <div class="home bg-grey m-t-1 p-1 rounded">
+                <ul>
+                    <li><img src="svg/home.svg" alt="home" class="invert" >Home</li>
+                    <li><img src="svg/search.svg" alt="Search" class="invert" >Search</li>
+                </ul>
+            </div>
+            <div class="library m-t-1 p-1 rounded bg-grey">
+                <div class="headerlib">
+                    <img src="svg/lib.svg" alt="library" class="invert" >
+                    <p>Your Library</p>
+                </div>
+                <div class="songsList">
+                    <ul class="songul">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right p-1">
+            <div class="header rounded">
+                <button  class = "humburger" ><img src="svg/hub.svg" alt="hub"></button>
+            </div>
+            <div class="playlist bg-grey p-1 m-t-1">
+                <h1>Spotify Playlist</h1>
+
+                <div class="cardContainer">
+                    <div class="card">
+                        <img src="img/YandhiAnimated.gif" alt="yandhi">
+                        <h2>Yandhi</h2>
+                        <p>Every Body Need Yandhi</p>
+
+                        <div class="playButCon">
+                            <button class="playBut">
+                              <svg style="width: 32px; height: 32px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-6.4-3.692a1 1 0 00-1.5.866v7.384a1 1 0 001.5.866l6.4-3.692a1 1 0 000-1.732z"></path>
+                              </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                
+                <div class="playbar">
+                    <div class="songsinfo">
+    
+                    </div>
+                    <div class="songsbt">
+                        <button id="previous" class="backwardbt"><img src="svg/backward.svg" alt="backwards"></button>
+                        <button id="play" class="playbt"><img id="playimg" src="svg/play.svg" alt="play"></button>
+                        <button id="next" class="forwardbt"><img src="svg/forward.svg" alt="forwards"></i></button>
+                    </div>
+                    <div class="songtime">
+                        
+                    </div>
+
+                    <div class="volume">
+                        <img src="svg/volume.svg" alt="volume">
+                        <input type="range" name="input" class="range">
+                    </div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
