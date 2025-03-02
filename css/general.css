@@ -78,7 +78,8 @@ body {
     left: -110%;
     transition: all .3s;
     z-index: 1;
-    width: 360px;
+    width: 400px;
+    height: 100%;
   }
 
   .right {
@@ -101,22 +102,24 @@ body {
   }
 
   .card {
-    width: 55vw;
+    width: 65vw;
   }
 
   .playbar {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
 
   .player {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     background-color: #a01e1e;
     border-radius: 10px;
     flex-direction: column;
@@ -172,6 +175,12 @@ body {
     width: 80px;
     color: white;
   }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
   
 }

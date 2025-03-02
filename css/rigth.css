@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    max-height: 80vh;
+    max-height: 65vh;
     overflow-y: auto;
 }
 
@@ -211,4 +211,18 @@
 .range {
     width: 80px;
     color: white;
+}
+
+.header p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
 }
