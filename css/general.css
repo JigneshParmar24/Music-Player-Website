@@ -184,3 +184,10 @@ body {
 
   
 }
+
+
+@media (min-width : 1900px){
+  .player{
+    width: 71%;
+  }
+}
